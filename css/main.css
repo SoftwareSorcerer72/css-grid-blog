@@ -60,11 +60,13 @@ body {
     grid-area: prof-pic;
     align-self: center;
     justify-self: center;
+   
+    
 }
 
 
 .img-container {
-    max-width: 75%;
+    max-width: 70%;
     display: flexbox;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +76,7 @@ body {
 #prof-image {
     max-width: 100%;
     height: auto;
+
 }
     
 
@@ -100,3 +103,32 @@ body {
 .prof-info {
         grid-area: prof-info;
     }
+
+
+    .post-card {
+        background-color: violet;
+        padding: 1em;
+        border: 2px solid cornflowerblue;
+        border-radius: 25px;
+        margin-bottom: 1vh;
+    }
+
+    .postcard > p {
+        margin: 2vh 0;
+    }
+
+    .post-links {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .posts-links > a {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .post-links > a:hover {
+        text-decoration: underline;
+    }
+        
