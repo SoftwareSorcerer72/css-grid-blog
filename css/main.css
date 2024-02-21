@@ -1,0 +1,40 @@
+* {
+    background-color: purple;
+}
+
+
+
+.grid-container {
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 2fr 10vw;
+    grid-template-rows: 10vh 40vh 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    ". prof-pic prof-info ."
+    ". posts posts .";
+    row-gap: 3vh;
+    
+    
+}
+
+.area-border {
+    border: 2px solid black;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.prof-pic {
+    grid-area: prof-pic;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.prof-info {
+    grid-area: prof-info;
+}
