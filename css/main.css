@@ -6,12 +6,50 @@
 
 
 
-body {
+/* body {
     background-color: rgb(94, 10, 94);
+} */
+
+body {
+    background: linear-gradient(to bottom, rgb(94, 10, 94), transparent);
 }
 
 
 
+.grid-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40vh 10vh;
+    grid-template-areas: 
+    "posts posts"
+    "prof-info prof-pic"
+    "nav nav";
+    row-gap: 3vh;
+}
+
+@media (min-width: 1000px){
+    .grid-container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 10vw 1fr 2fr 10vw;
+        grid-template-rows: 10vh 40vh 1fr;
+        grid-template-areas: 
+        "nav nav nav nav"
+        ". prof-pic prof-info ."
+        ". posts posts .";
+        row-gap: 3vh;
+        }
+}
+
+
+
+
+
+
+
+
+/* 
 .grid-container {
 
     min-height: 200vh;
@@ -27,7 +65,7 @@ body {
     top: 0;
     
     
-}
+} */
 
 .area-border {
     border: 2px solid black;
@@ -35,7 +73,8 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background: linear-gradient(to top, rgb(12, 79, 223), transparent, rgb(12, 86, 223));
 }
 
 
@@ -47,7 +86,7 @@ body {
 }
 
 .nav-links > a {
-    color: rgb(36, 3, 226);
+    color: rgb(218, 215, 231);
     text-decoration: none;
 }
 
@@ -76,6 +115,7 @@ body {
 #prof-image {
     max-width: 100%;
     height: auto;
+    border-radius: 5px ;
 
 }
     
@@ -102,15 +142,18 @@ body {
 
 .prof-info {
         grid-area: prof-info;
+        text-shadow: 0dvh 0.5vh 0.5vh rgb(108, 107, 116);
+        font-size: large;
+        font
     }
 
 
     .post-card {
-        background-color: violet;
+        background-color: rgba(124, 12, 228, 0.329);
         padding: 1em;
         border: 2px solid cornflowerblue;
         border-radius: 25px;
-        margin-bottom: 1vh;
+        margin-bottom: 2.5vh;
     }
 
     .postcard > p {
@@ -120,10 +163,12 @@ body {
     .post-links {
         display:flex;
         justify-content: space-around;
+        margin-top: 10px;
+        
     }
 
-    .posts-links > a {
-        color: black;
+    .post-links > a {
+        color: rgb(233, 231, 231);
         text-decoration: none;
 
     }
