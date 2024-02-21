@@ -58,12 +58,30 @@ body {
 
 .prof-pic {
     grid-area: prof-pic;
+    align-self: center;
+    /* justify-self: center; */
 }
+
+
+.img-container {
+    max-width: 75%;
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+#prof-image {
+    max-width: 100%;
+    height: auto;
+}
+    
 
 .posts {
-    grid-area: posts;
-}
+        grid-area: posts;
+    }
+    
 
 .prof-info {
-    grid-area: prof-info;
-}
+        grid-area: prof-info;
+    }
